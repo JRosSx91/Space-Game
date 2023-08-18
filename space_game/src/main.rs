@@ -62,6 +62,19 @@ fn main() {
                 _ => {}
             }
         }
+
+        spaceship.x = spaceship.x.clamp(0.0, 800.0 - spaceship.size);
+
+        if let Some(Button::Keyboard(key)) = e.press_args() {
+            match key {
+                Key::Up => spaceship.y -= spaceship.speed,
+                Key::Down => spaceship.y += spaceship.speed,
+                _ => {}
+            }
+        }
+
+        spaceship.y = spaceship.y.clamp(0.0, 600.0 - spaceship.size);
+
         // Dibujo del fondo estrellado
         window.draw_2d(&e, |c, g, _| {
             clear([0.0, 0.0, 0.0, 1.0], g); // Limpia la pantalla con negro
