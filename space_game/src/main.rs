@@ -56,6 +56,14 @@ fn main() {
     }
 
     while let Some(e) = window.next() {
+        // Movimiento nave
+        if let Some(Button::Keyboard(key)) = e.press_args() {
+            match key {
+                Key::Left => spaceship.x -= spaceship.speed,
+                Key::Right => spaceship.x += spaceship.speed,
+                _ => {}
+            }
+        }
         // Dibujo del fondo estrellado
         window.draw_2d(&e, |c, g, _| {
             clear([0.0, 0.0, 0.0, 1.0], g); // Limpia la pantalla con negro
