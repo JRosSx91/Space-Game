@@ -127,7 +127,28 @@ fn main() {
                 g,
             );
 
-            // Dibujo de proyectiles y enemigos aquí
+            window.draw_2d(&e, |c, g, _| {
+                clear([0.0, 0.0, 0.0, 1.0], g);
+
+                // Dibujo de los proyectiles
+                for projectile in &projectiles {
+                    if projectile.is_active {
+                        rectangle(
+                            [1.0, 1.0, 1.0, 1.0],
+                            [
+                                projectile.x,
+                                projectile.y,
+                                projectile.width,
+                                projectile.height,
+                            ],
+                            c.transform,
+                            g,
+                        );
+                    }
+                }
+
+                // ... (dibujo de otros elementos del juego)
+            });
             // ...
         });
 
