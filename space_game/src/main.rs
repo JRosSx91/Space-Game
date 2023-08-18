@@ -14,6 +14,7 @@ struct Projectile {
     width: f64,
     height: f64,
     speed: f64,
+    is_active: bool,
 }
 
 struct Enemy {
