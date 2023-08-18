@@ -25,5 +25,9 @@ struct Enemy {
     is_enabled: bool,
 }
 fn main() {
-    println!("Hello, world!");
+    // window config
+    let mut window: PistonWindow = WindowSettings::new("Space Game", [800, 600])
+        .exit_on_esc(true)
+        .build()
+        .unwrap();
 }
