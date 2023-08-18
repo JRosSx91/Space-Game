@@ -77,17 +77,15 @@ fn main() {
                 );
             }
 
-            // Dibujo de la nave espacial
+            // Dibuja la nave espacial, proyectiles y enemigos aquí
+            // ...
+        });
+        //Nave
         window.draw_2d(&e, |c, g, _| {
             clear([0.0, 0.0, 0.0, 1.0], g);
 
             for &(x, y) in &stars {
-                rectangle(
-                    [1.0, 1.0, 1.0, 1.0],
-                    [x, y, 1.0, 1.0],
-                    c.transform,
-                    g,
-                );
+                rectangle([1.0, 1.0, 1.0, 1.0], [x, y, 1.0, 1.0], c.transform, g);
             }
 
             // Dibujo de la nave espacial
