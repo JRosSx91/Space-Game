@@ -76,9 +76,6 @@ fn main() {
                     g,
                 );
             }
-
-            // Dibuja la nave espacial, proyectiles y enemigos aquí
-            // ...
         });
         //Nave
         window.draw_2d(&e, |c, g, _| {
@@ -89,9 +86,15 @@ fn main() {
             }
 
             // Dibujo de la nave espacial
-            rectangle(
+            let spaceship_points = [
+                [spaceship.x + spaceship.size, spaceship.y], // Punto derecho
+                [spaceship.x, spaceship.y - (spaceship.size / 2.0)], // Punto superior izquierdo
+                [spaceship.x, spaceship.y + (spaceship.size / 2.0)], // Punto inferior izquierdo
+            ];
+
+            polygon(
                 [0.0, 1.0, 0.0, 1.0], // Color verde para la nave
-                [spaceship.x, spaceship.y, spaceship.width, spaceship.height],
+                &spaceship_points,
                 c.transform,
                 g,
             );
