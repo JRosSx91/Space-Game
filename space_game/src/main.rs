@@ -77,7 +77,28 @@ fn main() {
                 );
             }
 
-            // Dibuja la nave espacial, proyectiles y enemigos aquí
+            // Dibujo de la nave espacial
+        window.draw_2d(&e, |c, g, _| {
+            clear([0.0, 0.0, 0.0, 1.0], g);
+
+            for &(x, y) in &stars {
+                rectangle(
+                    [1.0, 1.0, 1.0, 1.0],
+                    [x, y, 1.0, 1.0],
+                    c.transform,
+                    g,
+                );
+            }
+
+            // Dibujo de la nave espacial
+            rectangle(
+                [0.0, 1.0, 0.0, 1.0], // Color verde para la nave
+                [spaceship.x, spaceship.y, spaceship.width, spaceship.height],
+                c.transform,
+                g,
+            );
+
+            // Dibujo de proyectiles y enemigos aquí
             // ...
         });
 
