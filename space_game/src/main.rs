@@ -22,7 +22,7 @@ struct Enemy {
     width: f64,
     height: f64,
     speed: f64,
-    is_enabled: bool,
+    is_active: bool,
 }
 fn main() {
     // window config
@@ -74,6 +74,23 @@ fn main() {
         }
 
         spaceship.y = spaceship.y.clamp(0.0, 600.0 - spaceship.size);
+
+        if let Some(Button::Keyboard(key)) = e.press_args() {
+            match key {
+                Key::Space => {
+                    let projectile = Projectile {
+                        x: spaceship.x + spaceship.size,
+                        y: spaceship.y + spaceship.size / 2.0,
+                        width: 10.0,
+                        height: 5.0,
+                        speed: 8.0,
+                        is_active: true,
+                    };
+                    projectiles.push(projectile);
+                }
+                _ => {}
+            }
+        }
 
         // Dibujo del fondo estrellado
         window.draw_2d(&e, |c, g, _| {
