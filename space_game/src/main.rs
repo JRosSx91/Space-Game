@@ -4,8 +4,7 @@ use rand::random;
 struct Spaceship {
     x: f64,
     y: f64,
-    width: f64,
-    height: f64,
+    size: f64,
     speed: f64,
 }
 
@@ -36,8 +35,7 @@ fn main() {
     let mut spaceship = Spaceship {
         x: 400.0,
         y: 500.0,
-        width: 50.0,
-        height: 50.0,
+        size: 50.0,
         speed: 5.0,
     };
 
