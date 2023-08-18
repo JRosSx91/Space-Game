@@ -43,4 +43,14 @@ fn main() {
     let mut projectiles: Vec<Projectile> = Vec::new();
 
     let mut enemies: Vec<Enemy> = Vec::new();
+
+    //Background
+    let stars_count = 100;
+    let mut stars: Vec<(f64, f64)> = Vec::new();
+
+    for _ in 0..stars_count {
+        let x = rand::random::<f64>() * 800.0;
+        let y = rand::random::<f64>() * 600.0;
+        stars.push((x, y));
+    }
 }
