@@ -30,4 +30,17 @@ fn main() {
         .exit_on_esc(true)
         .build()
         .unwrap();
+
+    //Init Structs
+    let mut spaceship = Spaceship {
+        x: 400.0,
+        y: 500.0,
+        width: 50.0,
+        height: 50.0,
+        speed: 5.0,
+    };
+
+    let mut projectiles: Vec<Projectile> = Vec::new();
+
+    let mut enemies: Vec<Enemy> = Vec::new();
 }
