@@ -193,24 +193,17 @@ fn main() {
             enemies[j].is_enabled = false;
         }
 
-        // Filtra los proyectiles y enemigos inactivos para no dibujarlos
         projectiles.retain(|projectile| projectile.is_active);
         enemies.retain(|enemy| enemy.is_enabled);
 
-        // Dibujo del fondo estrellado
         window.draw_2d(&e, |c, g, _| {
-            clear([0.0, 0.0, 0.0, 1.0], g); // Limpia la pantalla con negro
+            clear([0.0, 0.0, 0.0, 1.0], g);
 
             for &(x, y) in &stars {
-                rectangle(
-                    [1.0, 1.0, 1.0, 1.0], // Color blanco para las estrellas
-                    [x, y, 1.0, 1.0],     // Tamaño de la estrella
-                    c.transform,
-                    g,
-                );
+                rectangle([1.0, 1.0, 1.0, 1.0], [x, y, 1.0, 1.0], c.transform, g);
             }
         });
-        //Nave
+
         window.draw_2d(&e, |c, g, _| {
             clear([0.0, 0.0, 0.0, 1.0], g);
 
@@ -218,7 +211,6 @@ fn main() {
                 rectangle([1.0, 1.0, 1.0, 1.0], [x, y, 1.0, 1.0], c.transform, g);
             }
 
-            // Dibujo de la nave espacial
             let spaceship_points = [
                 [spaceship.x + spaceship.size, spaceship.y], // Punto derecho
                 [spaceship.x, spaceship.y - (spaceship.size / 2.0)], // Punto superior izquierdo
@@ -234,7 +226,6 @@ fn main() {
             // ...
         });
         window.draw_2d(&e, |c, g, _| {
-            // Dibujo de los proyectiles
             for projectile in &projectiles {
                 if projectile.is_active {
                     rectangle(
@@ -251,26 +242,22 @@ fn main() {
                 }
             }
 
-            // Dibujo de los enemigos
             for enemy in &enemies {
                 ellipse(
-                    [0.5, 0.5, 0.5, 1.0], // Color grisáceo para los asteroides
+                    [0.5, 0.5, 0.5, 1.0],
                     [
                         enemy.x - (enemy.width / 2.0),
                         enemy.y - (enemy.height / 2.0),
                         enemy.width,
                         enemy.height,
-                    ], // Posición y tamaño
+                    ],
                     c.transform,
                     g,
                 );
             }
 
-            // ... (dibujo de otros elementos del juego)
+            //
         });
-
-        // Resto de la lógica del juego
-        // ...
     }
 }
 fn check_collision(
@@ -283,23 +270,18 @@ fn check_collision(
     b_width: f64,
     b_height: f64,
 ) -> bool {
-    // Comprueba si el rectángulo A está a la izquierda del rectángulo B
     if a_x + a_width < b_x {
         return false;
     }
-    // Comprueba si el rectángulo A está a la derecha del rectángulo B
     if a_x > b_x + b_width {
         return false;
     }
-    // Comprueba si el rectángulo A está arriba del rectángulo B
     if a_y + a_height < b_y {
         return false;
     }
-    // Comprueba si el rectángulo A está debajo del rectángulo B
     if a_y > b_y + b_height {
         return false;
     }
 
-    // Si ninguna de las condiciones anteriores se cumple, entonces hay una colisión
     return true;
 }
