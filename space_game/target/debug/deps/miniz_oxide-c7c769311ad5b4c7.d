@@ -1,0 +1,10 @@
+C:\Users\Ivan\Desktop\labs\rust\Space-Game\space_game\target\debug\deps\libminiz_oxide-c7c769311ad5b4c7.rmeta: C:\Users\Ivan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\miniz_oxide-0.7.1\src\lib.rs C:\Users\Ivan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\miniz_oxide-0.7.1\src\inflate\mod.rs C:\Users\Ivan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\miniz_oxide-0.7.1\src\inflate\core.rs C:\Users\Ivan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\miniz_oxide-0.7.1\src\inflate\output_buffer.rs C:\Users\Ivan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\miniz_oxide-0.7.1\src\inflate\stream.rs C:\Users\Ivan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\miniz_oxide-0.7.1\src\shared.rs
+
+C:\Users\Ivan\Desktop\labs\rust\Space-Game\space_game\target\debug\deps\miniz_oxide-c7c769311ad5b4c7.d: C:\Users\Ivan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\miniz_oxide-0.7.1\src\lib.rs C:\Users\Ivan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\miniz_oxide-0.7.1\src\inflate\mod.rs C:\Users\Ivan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\miniz_oxide-0.7.1\src\inflate\core.rs C:\Users\Ivan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\miniz_oxide-0.7.1\src\inflate\output_buffer.rs C:\Users\Ivan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\miniz_oxide-0.7.1\src\inflate\stream.rs C:\Users\Ivan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\miniz_oxide-0.7.1\src\shared.rs
+
+C:\Users\Ivan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\miniz_oxide-0.7.1\src\lib.rs:
+C:\Users\Ivan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\miniz_oxide-0.7.1\src\inflate\mod.rs:
+C:\Users\Ivan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\miniz_oxide-0.7.1\src\inflate\core.rs:
+C:\Users\Ivan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\miniz_oxide-0.7.1\src\inflate\output_buffer.rs:
+C:\Users\Ivan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\miniz_oxide-0.7.1\src\inflate\stream.rs:
+C:\Users\Ivan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\miniz_oxide-0.7.1\src\shared.rs:

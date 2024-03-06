@@ -1,0 +1,11 @@
+C:\Users\Ivan\Desktop\labs\rust\Space-Game\space_game\target\debug\deps\libsemver_parser-a6ff109d394aaa5b.rmeta: C:\Users\Ivan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\semver-parser-0.7.0\src\lib.rs C:\Users\Ivan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\semver-parser-0.7.0\src\version.rs C:\Users\Ivan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\semver-parser-0.7.0\src\range.rs C:\Users\Ivan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\semver-parser-0.7.0\src\common.rs C:\Users\Ivan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\semver-parser-0.7.0\src\recognize.rs
+
+C:\Users\Ivan\Desktop\labs\rust\Space-Game\space_game\target\debug\deps\libsemver_parser-a6ff109d394aaa5b.rlib: C:\Users\Ivan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\semver-parser-0.7.0\src\lib.rs C:\Users\Ivan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\semver-parser-0.7.0\src\version.rs C:\Users\Ivan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\semver-parser-0.7.0\src\range.rs C:\Users\Ivan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\semver-parser-0.7.0\src\common.rs C:\Users\Ivan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\semver-parser-0.7.0\src\recognize.rs
+
+C:\Users\Ivan\Desktop\labs\rust\Space-Game\space_game\target\debug\deps\semver_parser-a6ff109d394aaa5b.d: C:\Users\Ivan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\semver-parser-0.7.0\src\lib.rs C:\Users\Ivan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\semver-parser-0.7.0\src\version.rs C:\Users\Ivan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\semver-parser-0.7.0\src\range.rs C:\Users\Ivan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\semver-parser-0.7.0\src\common.rs C:\Users\Ivan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\semver-parser-0.7.0\src\recognize.rs
+
+C:\Users\Ivan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\semver-parser-0.7.0\src\lib.rs:
+C:\Users\Ivan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\semver-parser-0.7.0\src\version.rs:
+C:\Users\Ivan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\semver-parser-0.7.0\src\range.rs:
+C:\Users\Ivan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\semver-parser-0.7.0\src\common.rs:
+C:\Users\Ivan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\semver-parser-0.7.0\src\recognize.rs:
