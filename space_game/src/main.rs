@@ -82,7 +82,7 @@ fn main() {
     let max_enemies = 10;
 
     while let Some(e) = window.next() {
-        // Movimiento nave
+        // Spaceship movement
         if let Some(Button::Keyboard(key)) = e.press_args() {
             match key {
                 Key::Left => spaceship.accel_x = -0.5,
