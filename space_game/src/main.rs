@@ -120,17 +120,17 @@ fn main() {
         if random::<f64>() < 0.005 && active_enemies < max_enemies {
             let mut gravity = GRAVITY_VALUE;
             if random::<f64>() < 0.5 {
-                gravity = -GRAVITY_VALUE; // Gravedad negativa para mover el enemigo hacia arriba
+                gravity = -GRAVITY_VALUE; // Random reverse gravity for some enemies
             }
             enemies.push(Enemy {
-                x: 800.0,                         // Asegúrate de ajustar según el tamaño de tu ventana
-                y: rand::random::<f64>() * 600.0, // Posición Y aleatoria
+                x: 800.0,
+                y: rand::random::<f64>() * 600.0,
                 width: 20.0,
                 height: 20.0,
-                speed_x: -1.2, // Ajusta para controlar la velocidad horizontal
-                speed_y: 0.0,  // Comienza sin movimiento vertical, la gravedad se aplica después
+                speed_x: -1.2,
+                speed_y: 0.0, // Without initial vertical movement till gravity affects
                 is_enabled: true,
-                gravity_value: gravity, // Usa el valor de gravedad determinado
+                gravity_value: gravity,
             });
         }
 
