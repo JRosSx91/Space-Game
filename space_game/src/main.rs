@@ -181,18 +181,16 @@ fn main() {
                     println!("¡Colisión detectada!");
                     remove_projectiles.push(i);
                     remove_enemies.push(j);
-                    // No rompas el bucle aquí para permitir múltiples colisiones
+                    // Without a break so the program can have multiple collisions
                 }
             }
         }
 
-        // Elimina proyectiles y enemigos marcados para eliminación
-        // Se hace al revés para evitar problemas al eliminar mientras iteras
         for &i in remove_projectiles.iter().rev() {
-            projectiles[i].is_active = false; // Alternativamente, podrías querer remover el proyectil directamente
+            projectiles[i].is_active = false;
         }
         for &j in remove_enemies.iter().rev() {
-            enemies[j].is_enabled = false; // Alternativamente, podrías querer remover el enemigo directamente
+            enemies[j].is_enabled = false;
         }
 
         // Filtra los proyectiles y enemigos inactivos para no dibujarlos
