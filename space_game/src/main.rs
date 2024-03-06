@@ -40,7 +40,6 @@ impl Enemy {
 
         self.speed_y += self.gravity_value;
 
-        // Ajusta estas condiciones para evitar la desactivación inmediata
         if self.x < -self.width || self.y > 600.0 + self.height {
             self.is_enabled = false;
         }
@@ -48,7 +47,6 @@ impl Enemy {
 }
 
 fn main() {
-    // window config
     let mut window: PistonWindow = WindowSettings::new("Space Game", [800, 600])
         .exit_on_esc(true)
         .build()
