@@ -104,14 +104,14 @@ fn main() {
         spaceship.speed_x += spaceship.accel_x;
         spaceship.speed_y += spaceship.accel_y;
 
-        // Aplica un límite a la velocidad para evitar que se vuelva incontrolable
+        // Applying limitations to acceleration
         spaceship.speed_x = spaceship.speed_x.clamp(-max_speed, max_speed);
         spaceship.speed_y = spaceship.speed_y.clamp(-max_speed, max_speed);
 
         spaceship.x += spaceship.speed_x;
         spaceship.y += spaceship.speed_y;
 
-        // Asegúrate de que la nave no salga de los límites de la pantalla
+        // Applying limits to Spaceship's movement
         spaceship.x = spaceship.x.clamp(0.0, 800.0 - spaceship.size);
         spaceship.y = spaceship.y.clamp(0.0, 600.0 - spaceship.size);
 
