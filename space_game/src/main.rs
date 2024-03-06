@@ -79,7 +79,7 @@ fn main() {
         stars.push((x, y));
     }
 
-    let max_enemies = 10; // Ajusta este valor según sea necesario
+    let max_enemies = 10;
 
     while let Some(e) = window.next() {
         // Movimiento nave
